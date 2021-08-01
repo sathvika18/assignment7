@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC"-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtm">
+<head>
+	<title>TABLE</title>
+</head>
+<body style="background-color:lightcyan; color:black;">
+	<script type="text/javascript">
+
+		var bordersize = prompt("Select a table border size \n"+
+								"0 (no border)\n"+
+								"1 (1 pixel border)\n"+
+								"4 (4 pixel border)\n"+
+								"8 (8 pixel border)\n");
+
+		switch(bordersize){
+			case "0":document.write("<table>");
+					 break;
+			case "1":document.write("<table border='1'>");
+					 break;
+			case "4":document.write("<table border='4'>");
+					 break;
+			case "8":document.write("<table border='8'>");
+					 break;
+			default:document.write("Error - Invalid choice: ",bordersize,"<br>");
+					 break;
+		}
+
+		document.write("<caption>This is Table </caption>");
+		document.write("<tr>",
+					   "<th/>",
+					   "<th>Name</th>",
+					   "<th>rollno</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>1</th>",
+					   "<th>RAM</th>",
+					   "<th>4NM101</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>2</th>",
+					   "<th>BANNU</th>",
+					   "<th>4NM102</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>3</th>",
+					   "<th>SANNU</th>",
+					   "<th>4NM103</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>4</th>",
+					   "<th>IMMU</th>",
+					   "<th>4NM104</th>",
+					   "</tr>",
+					   "</table>");
+
+	</script>
+</body>
